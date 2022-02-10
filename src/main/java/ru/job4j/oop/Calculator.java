@@ -12,7 +12,7 @@ public class Calculator {
     }
 
     public static int minus(int b) {
-        return Math.abs(b - x);
+        return b - x;
     }
 
     public int divide(int c) {
@@ -20,20 +20,21 @@ public class Calculator {
     }
 
     public int sumAllOperation(int d) {
-        Calculator calculator = new Calculator();
-        return calculator.sumAllOperation(sum(d) + multiply(d) + minus(d) + divide(d));
+        return sum(d) + multiply(d) + minus(d) + divide(d);
     }
 
 
     public static void main(String[] args) {
-        int result = Calculator.sum(10);
+        int result = sum(10);
         System.out.println(result);
+        int result1 = minus(10);
+        System.out.println(result1);
         Calculator calculator = new Calculator();
-        int rsl = calculator.multiply(5);
-        System.out.println(rsl);
-        System.out.println(minus(6));
-        System.out.println(calculator.divide(10));
-        System.out.println(calculator.sumAllOperation(10));
+        int result2 = calculator.multiply(10);
+        System.out.println(result2);
+        int result3 = calculator.divide(10);
+        System.out.println(result3);
+        int result4 = calculator.sumAllOperation(10);
+        System.out.println(result4);
     }
 }
-
