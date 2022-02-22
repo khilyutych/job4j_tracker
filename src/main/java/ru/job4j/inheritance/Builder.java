@@ -8,8 +8,8 @@ public class Builder extends Engineer{
         this.drawings = drawings;
     }
 
-    public boolean useDrawings(){
-        return true;
+    public boolean useDrawings(String program) {
+        boolean result = program.equals(drawings);
+        return result;
     }
-
 }

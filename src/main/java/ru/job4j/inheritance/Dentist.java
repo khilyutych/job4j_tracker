@@ -8,8 +8,7 @@ public class Dentist extends Doctor{
         this.heart = heart;
     }
 
-    public boolean thingHeart(){
-        return false;
+    public boolean useHeart(String medical) {
+        return !medical.equals(heart);
     }
-
 }

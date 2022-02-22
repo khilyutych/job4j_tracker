@@ -1,6 +1,6 @@
 package ru.job4j.inheritance;
 
-public class Programme extends Engineer{
+public class Programme extends Engineer {
     private String drawings;
 
     public Programme(String name, String surname, String education, char birthday, String program, String drawings) {
@@ -8,8 +8,8 @@ public class Programme extends Engineer{
         this.drawings = drawings;
     }
 
-    public boolean useDrawings(){
-        return false;
+    public boolean useDrawings(String program) {
+        boolean result = !program.equals(drawings);
+    return result;
     }
-
 }
