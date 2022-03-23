@@ -30,7 +30,7 @@ public class Calculator {
         int result1 = minus(10);
         System.out.println(result1);
         Calculator calculator = new Calculator();
-        int result2 = calculator.multiply(10);
+        int result2 = calculator.  multiply(10);
         System.out.println(result2);
         int result3 = calculator.divide(10);
         System.out.println(result3);
