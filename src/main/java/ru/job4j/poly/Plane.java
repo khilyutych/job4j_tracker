@@ -5,6 +5,4 @@ public class Plane implements Vehicle {
     public void move() {
         System.out.println("самолет летает по воздуху");
     }
-    Vehicle plane = new Plane();
-
 }

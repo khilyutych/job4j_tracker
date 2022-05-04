@@ -5,5 +5,4 @@ public class Train implements Vehicle {
     public void move() {
         System.out.println("поезд передвигается по рельсам");
     }
-    Vehicle train = new Train();
 }

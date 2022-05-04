@@ -5,6 +5,4 @@ public class MiniBus implements Vehicle{
     public void move() {
         System.out.println("автобус двигается по скоростным трассам");
     }
-    Vehicle miniBus = new MiniBus();
-
 }
