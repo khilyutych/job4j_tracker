@@ -40,16 +40,6 @@ public class StartUI {
             System.out.println("Ошибка удаления заявки.");
         }
     }
-    public static void findItem(Input input, Tracker tracker) {
-        System.out.println("=== Find item by id ===");
-        int id = Integer.parseInt(input.askStr("Enter id: "));
-        Item item = tracker.findById(id);
-        if (item != null) {
-            System.out.println(item);
-        } else {
-            System.out.println("Заявка с введенным id: " + id + " не найдена.");
-        }
-    }
     public static void findItemById(Input input, Tracker tracker) {
         System.out.println("=== Find item by id ===");
         int id = Integer.parseInt(input.askStr("Enter id: "));
