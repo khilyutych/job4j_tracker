@@ -13,7 +13,7 @@ public class Tracker {
         return item;
     }
 
-    public Item[] findAll(){
+    public Item[] findAll() {
         Item[] result = new Item[size];
         int counter = 0;
         for (int index = 0; index < size; index++) {
@@ -71,10 +71,16 @@ public class Tracker {
         boolean rsl = false;
         if (i != -1) {
             System.arraycopy(items, i + 1, items, i, size - i - 1);
-        rsl = true;
+            rsl = true;
         }
         items[size - 1] = null;
         size--;
+        return rsl;
+    }
+
+    public boolean exit(int id) {
+        int i = indexOf(id);
+        boolean rsl = false;
         return rsl;
     }
 }

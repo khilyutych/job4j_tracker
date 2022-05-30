@@ -3,7 +3,7 @@ package ru.job4j.tracker;
 public class FindActionById implements UserAction {
     @Override
     public String name() {
-        return "Add new Item";
+        return "Find item by id";
     }
 
     @Override
