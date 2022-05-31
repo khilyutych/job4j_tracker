@@ -77,10 +77,4 @@ public class Tracker {
         size--;
         return rsl;
     }
-
-    public boolean exit(int id) {
-        int i = indexOf(id);
-        boolean rsl = false;
-        return rsl;
-    }
 }
