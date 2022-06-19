@@ -32,10 +32,10 @@ public class StartUI {
                 new CreateAction(output),
                 new ShowAction(),
                 new DeleteAction(),
-                new EditeAction(),
+                new EditeAction(output),
                 new FindActionById(),
                 new FindActionByName(),
-                new ExitAction()
+                new ExitAction(output)
 
         };
         new StartUI(output).init(input, tracker, actions);
